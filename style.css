@@ -113,4 +113,119 @@ p {
   box-sizing: border-box;
 }
 
+/* RESPONSIVIDADE */
 
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  body {
+    margin-top: 30px; /* Ajusta o espaçamento superior em dispositivos móveis */
+  }
+
+  .menu {
+    flex-direction: column; /* Organiza os itens do menu em uma coluna */
+    gap: 10px; /* Diminui o espaço entre os itens do menu */
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr; /* Coloca as colunas em uma única coluna */
+  }
+
+  .introducao {
+    padding: 20px; /* Reduz o padding */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+
+  .detalhe {
+    top: 10px; /* Ajusta a posição do detalhe */
+    right: -10px;
+    width: 40px; /* Ajusta a largura do detalhe */
+    height: 3px; /* Ajusta a altura do detalhe */
+  }
+
+  .subtitulo {
+    font-size: 36px; /* Diminui o tamanho do subtítulo */
+    text-align: center; /* Alinha o subtítulo ao centro */
+    padding: 20px; /* Diminui o padding */
+  }
+
+  .vantagens-item {
+    grid-template-columns: 1fr; /* Coloca as vantagens em uma coluna */
+  }
+
+  .botao {
+    width: 100%; /* Faz o botão ocupar toda a largura */
+    padding: 12px 0; /* Ajusta o padding do botão */
+  }
+
+  .rodape {
+    padding: 20px; /* Diminui o padding do rodapé */
+  }
+}
+
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    gap: 15px; /* Ajusta o espaço entre os itens do menu */
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr 1fr; /* Mantém as duas colunas para o conteúdo */
+    gap: 30px; /* Ajusta o espaçamento entre as colunas */
+  }
+
+  .introducao {
+    padding: 30px; /* Ajusta o padding da introdução */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+
+  .subtitulo {
+    font-size: 48px; /* Ajusta o tamanho do subtítulo */
+    padding: 30px; /* Ajusta o padding do subtítulo */
+  }
+
+  .vantagens-item {
+    grid-template-columns: 1fr 1fr; /* Exibe as vantagens em duas colunas */
+  }
+
+  .botao {
+    width: auto; /* O botão não ocupa toda a largura, ajusta para o conteúdo */
+    padding: 15px 30px; /* Mantém o tamanho padrão do botão */
+  }
+}
+
+
+/* Estilos para telas grandes (desktops) */
+@media (min-width: 1025px) {
+  .menu {
+    gap: 20px; /* Mantém o espaço entre os itens do menu */
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr 1fr; /* Mantém o layout de 2 colunas */
+    max-width: 1000px; /* Define a largura máxima do conteúdo */
+    gap: 60px; /* Aumenta o espaçamento entre as colunas */
+  }
+
+  .introducao {
+    padding: 40px; /* Mantém o padding da introdução */
+    text-align: right; /* Alinha o texto à direita */
+  }
+
+  .subtitulo {
+    font-size: 64px; /* Tamanho maior do subtítulo */
+    padding: 40px; /* Ajusta o padding do subtítulo */
+  }
+
+  .vantagens-item {
+    grid-template-columns: auto 1fr; /* Exibe as vantagens em 2 colunas */
+  }
+
+  .botao {
+    padding: 15px 30px; /* Tamanho padrão do botão */
+  }
+
+  .rodape {
+    padding: 40px; /* Mantém o padding do rodapé */
+  }
+}
