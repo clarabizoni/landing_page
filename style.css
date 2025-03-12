@@ -103,6 +103,8 @@ p {
   grid-column: 2;
 }
 
+/* Estilização do rodapé */
+
 .rodape {
   background: #fff;
   width: 100%;
@@ -110,3 +112,5 @@ p {
   padding: 40px;
   box-sizing: border-box;
 }
+
+
